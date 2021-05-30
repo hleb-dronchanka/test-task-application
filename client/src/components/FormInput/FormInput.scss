@@ -1,0 +1,47 @@
+
+.form {
+    &__auth {
+        
+        .form-line {
+            
+            &.input-line {
+                .input-field {
+                    position: relative;
+                    label {
+                        display: inline-block;
+                        background-color: #ffffff;
+                        padding: 0 12px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        position: absolute;
+                        left: 15px;
+                        top: -7px;
+                    }
+                    input {
+                        display: block;
+                        background-color: #FFFFFF;
+                        border: 1px solid #4B92C5;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 12px 17px;
+                        outline: none;
+
+                        &:focus {
+                            outline-color: #4B92C5;
+                            border-radius: 0;
+                        }
+                    }
+
+                    &.error {
+                        label {
+                            color: red;
+                        }
+                        input {
+                            border: 1px solid red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

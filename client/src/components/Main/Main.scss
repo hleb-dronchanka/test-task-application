@@ -1,0 +1,18 @@
+.main-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .content {
+        padding: 20px 60px;
+        background: rgba(75, 146, 197, 0.08);
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            // color: #656565;
+        }
+    }
+}

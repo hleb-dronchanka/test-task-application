@@ -1,0 +1,147 @@
+.bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__wrap {
+
+      width: 2000px;
+      // min-height: 100%;
+      height: 1px;
+      position: relative;
+      span {
+          position: absolute;
+          &.nth1 {
+              animation: 100s linear 0s normal none infinite running bg_nth1;
+
+              display: inline-block;
+              width: 590px;
+              height: 590px;
+              background: rgba(75, 146, 197, 0.025);
+              transform: rotate(-45deg);
+
+              margin-top: -200px;
+              left: 55%;
+          }
+
+          &.nth2 {
+              animation: 100s linear 0s normal none infinite running bg_nth2;
+
+              display: inline-block;
+              width: 480px;
+              height: 480px;
+
+              background: rgba(75, 146, 197, 0.03);
+              transform: rotate(-45deg);
+
+              margin-top: -400px;
+              left: 40%;
+          }
+
+          &.nth3 {
+              animation: 100s linear 0s normal none infinite running bg_nth3;
+
+              display: inline-block;
+              width: 235px;
+              height: 235px;
+
+              background: rgba(75, 146, 197, 0.05);
+              transform: rotate(-45deg);
+
+              left: 34%;
+              margin-top: 225px;
+          }
+
+          &.nth4 {
+              animation: 100s linear 0s normal none infinite running bg_nth4;
+
+              display: inline-block;
+              width: 345px;
+              height: 345px;
+
+              background: transparent;
+              border: 6px solid rgba(75, 146, 197, 0.06);
+              box-sizing: border-box;
+              transform: rotate(-45deg);
+
+              margin-top: -100px;
+              left: 32%;
+          }
+
+          &.nth5 {
+              animation: 100s linear 0s normal none infinite running bg_nth5;
+
+              width: 220px;
+              height: 220px;
+
+              background: #FFFFFF;
+              border: 6px solid rgba(75, 146, 197, 0.06);
+              box-sizing: border-box;
+              transform: rotate(-45deg);
+
+              margin-top: -50px;
+              left: 23%;
+          }
+      }
+  }
+}
+
+@keyframes bg_nth1 {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes bg_nth2 {
+  0% {
+      transform: rotate(0deg) scale(1);
+
+  }
+  50% {
+      transform: rotate(360deg) scale(0.1);
+  }
+  100% {
+      transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes bg_nth3 {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes bg_nth4 {
+  0% {
+      transform: rotate(600deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes bg_nth5 {
+  0% {
+      transform: rotate(0deg);
+      left: 23%;
+  }
+  50% {
+      transform: rotate(360deg);
+      left: 1%;
+  }
+  100% {
+      transform: rotate(0deg);
+      left: 23%;
+  }
+}

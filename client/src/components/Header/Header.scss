@@ -1,0 +1,32 @@
+header {
+    background: rgba(75, 146, 197, 0.08);
+    position: fixed;
+    width: 100%;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    top: 0;
+    z-index: 10;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu {
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+
+                    a {
+                        padding: 30px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
